@@ -8,8 +8,10 @@
 import Vue from 'vue'
 import App from '../app.vue'
 import counter from '../components/counter'
+// import car from '../components/car'
 
-Vue.component('counter', counter);
+Vue.component('app-counter', counter);
+// Vue.component('app-car', car);
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
