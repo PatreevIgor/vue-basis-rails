@@ -1,9 +1,11 @@
 <template>
-  <div id="app">
+  <div id='app'>
     <p>{{ message }}</p>
       <app-counter></app-counter>
       <hr>
       <app-car></app-car>
+      <hr>
+      <app-argument-component :carName='carName'> </app-argument-component>
     </div>
   </div>
 </template>
@@ -12,9 +14,10 @@
   import car from './components/car'
 
   export default {
-    data: function () {
+    data() {
       return {
-        message: "Hello Vue!"
+        message: 'Hello Vue!',
+        carName: 'Opel Frontera'
       }
     },
     components: {
