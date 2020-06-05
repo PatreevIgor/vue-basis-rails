@@ -5,7 +5,10 @@
       <hr>
       <app-car></app-car>
       <hr>
-      <app-argument-component :carName='carName'> </app-argument-component>
+      <app-argument-component :carName='carName' > </app-argument-component>
+      <hr>
+      <app-validate-arguments :carName='carName' :carYears='carYears'> </app-validate-arguments>
+
     </div>
   </div>
 </template>
@@ -17,7 +20,8 @@
     data() {
       return {
         message: 'Hello Vue!',
-        carName: 'Opel Frontera'
+        carName: 'Opel Frontera',
+        carYears: 30
       }
     },
     components: {
