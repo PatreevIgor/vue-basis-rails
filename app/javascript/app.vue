@@ -44,6 +44,13 @@
       <app-style-child-second></app-style-child-second>
 
       <hr>
+
+      <app-passin-html-to-component>
+        <h1 slot="title">[4.13] Passing html to component</h1>
+        <h2 slot="text">Some h2 text</h2>
+      </app-passin-html-to-component>
+
+      <hr>
     </div>
   </div>
 </template>
