@@ -39,6 +39,11 @@
       <app-event-emitter-child-second></app-event-emitter-child-second>
 
       <hr>
+
+      <app-style-child-first></app-style-child-first>
+      <app-style-child-second></app-style-child-second>
+
+      <hr>
     </div>
   </div>
 </template>
@@ -72,3 +77,4 @@
     text-align: center;
   }
 </style>
+

@@ -22,6 +22,8 @@ import childFirst from '../components/child-first'
 import childSecond from '../components/child-second'
 import eventEmitterChildFirst from '../components/event-emitter-child-first'
 import eventEmitterChildSecond from '../components/event-emitter-child-second'
+import styleChildFirst from '../components/style-child-first'
+import styleChildSecond from '../components/style-child-second'
 
 
 Vue.component('app-counter', counter);
@@ -33,6 +35,8 @@ Vue.component('app-child-first', childFirst);
 Vue.component('app-child-second', childSecond);
 Vue.component('app-event-emitter-child-first', eventEmitterChildFirst);
 Vue.component('app-event-emitter-child-second', eventEmitterChildSecond);
+Vue.component('app-style-child-first', styleChildFirst);
+Vue.component('app-style-child-second', styleChildSecond);
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
