@@ -33,6 +33,12 @@
                        @secondChildParamUpdated="secondChildParam = $event"></app-child-first>
       <app-child-second :secondChildParam='secondChildParam'></app-child-second>
       <hr>
+
+      <h1>[4.11] Send params between childs (use eventEmitter)</h1>
+      <app-event-emitter-child-first></app-event-emitter-child-first>
+      <app-event-emitter-child-second></app-event-emitter-child-second>
+
+      <hr>
     </div>
   </div>
 </template>
@@ -46,7 +52,7 @@
         message: 'Hello Vue!',
         carName: 'Opel Frontera',
         carYears: 30,
-        secondChildParam: 0
+        secondChildParam: 1
       }
     },
     components: {

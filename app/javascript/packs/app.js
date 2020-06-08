@@ -7,6 +7,12 @@
 
 import Vue from 'vue'
 import App from '../app.vue'
+
+export const eventEmitter = new Vue
+  console.log('====================')
+  console.log(eventEmitter._uid)
+  console.log('====================')
+
 import counter from '../components/counter'
 import argumentComponent from '../components/argument-component'
 import validateArguments from '../components/validate-arguments'
@@ -14,6 +20,8 @@ import sendParamToParent from '../components/send-param-to-parent'
 import sendFunctionFromParentToChild from '../components/send-function-from-parent-to-child'
 import childFirst from '../components/child-first'
 import childSecond from '../components/child-second'
+import eventEmitterChildFirst from '../components/event-emitter-child-first'
+import eventEmitterChildSecond from '../components/event-emitter-child-second'
 
 
 Vue.component('app-counter', counter);
@@ -23,6 +31,8 @@ Vue.component('app-send-param-to-parent', sendParamToParent);
 Vue.component('app-send-function-from-parent-to-child', sendFunctionFromParentToChild);
 Vue.component('app-child-first', childFirst);
 Vue.component('app-child-second', childSecond);
+Vue.component('app-event-emitter-child-first', eventEmitterChildFirst);
+Vue.component('app-event-emitter-child-second', eventEmitterChildSecond);
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
