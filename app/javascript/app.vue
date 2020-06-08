@@ -26,6 +26,13 @@
       <app-send-function-from-parent-to-child :changeFunc="changeNameToAudi"></app-send-function-from-parent-to-child>
 
       <hr>
+
+      <h1>[4.10] Send params (update params) between childs</h1>
+      <h2>secondChildParam: {{ secondChildParam }}</h2>
+      <app-child-first :secondChildParam='secondChildParam'
+                       @secondChildParamUpdated="secondChildParam = $event"></app-child-first>
+      <app-child-second :secondChildParam='secondChildParam'></app-child-second>
+      <hr>
     </div>
   </div>
 </template>
@@ -38,7 +45,8 @@
       return {
         message: 'Hello Vue!',
         carName: 'Opel Frontera',
-        carYears: 30
+        carYears: 30,
+        secondChildParam: 0
       }
     },
     components: {

@@ -12,6 +12,8 @@ import argumentComponent from '../components/argument-component'
 import validateArguments from '../components/validate-arguments'
 import sendParamToParent from '../components/send-param-to-parent'
 import sendFunctionFromParentToChild from '../components/send-function-from-parent-to-child'
+import childFirst from '../components/child-first'
+import childSecond from '../components/child-second'
 
 
 Vue.component('app-counter', counter);
@@ -19,6 +21,8 @@ Vue.component('app-argument-component', argumentComponent);
 Vue.component('app-validate-arguments', validateArguments);
 Vue.component('app-send-param-to-parent', sendParamToParent);
 Vue.component('app-send-function-from-parent-to-child', sendFunctionFromParentToChild);
+Vue.component('app-child-first', childFirst);
+Vue.component('app-child-second', childSecond);
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
