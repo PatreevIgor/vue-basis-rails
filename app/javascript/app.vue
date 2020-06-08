@@ -22,6 +22,10 @@
 
       <hr>
 
+      <h1>Parent name: {{ carName }}</h1>
+      <app-send-function-from-parent-to-child :changeFunc="changeNameToAudi"></app-send-function-from-parent-to-child>
+
+      <hr>
     </div>
   </div>
 </template>
@@ -39,6 +43,11 @@
     },
     components: {
       appCar: car
+    },
+    methods: {
+      changeNameToAudi() {
+        this.carName = 'Audi'
+      }
     }
   }
 </script>
