@@ -2,12 +2,25 @@
   <div id='app'>
     <p>{{ message }}</p>
       <app-counter></app-counter>
+
       <hr>
+
       <app-car></app-car>
+
       <hr>
+
       <app-argument-component :carName='carName' > </app-argument-component>
+
       <hr>
+ 
       <app-validate-arguments :carName='carName' :carYears='carYears'> </app-validate-arguments>
+
+      <hr>
+
+      <h1>Parent name: {{ carName }}</h1>
+      <app-send-param-to-parent @nameChanged="carName = $event"> </app-send-param-to-parent>
+
+      <hr>
 
     </div>
   </div>

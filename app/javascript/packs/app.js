@@ -10,10 +10,12 @@ import App from '../app.vue'
 import counter from '../components/counter'
 import argumentComponent from '../components/argument-component'
 import validateArguments from '../components/validate-arguments'
+import sendParamToParent from '../components/send-param-to-parent'
 
 Vue.component('app-counter', counter);
 Vue.component('app-argument-component', argumentComponent);
 Vue.component('app-validate-arguments', validateArguments);
+Vue.component('app-send-param-to-parent', sendParamToParent);
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
